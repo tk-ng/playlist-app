@@ -11,7 +11,7 @@ load_dotenv()
 app = Flask(__name__)
 # Please do not modify the following line on submission
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
-    'SUPABASE_DB_URL', os.environ.get'DABASE_URL')
+    'SUPABASE_DB_URL', os.environ.get('DABASE_URL'))
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
